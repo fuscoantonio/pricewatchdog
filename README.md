@@ -8,6 +8,8 @@ Questa è la prima versione alpha della app. Potrebbe non essere stabile.
 
 [Alpha release](https://github.com/fuscoantonio/pricewatchdog/releases/tag/v0.1-alpha)
 
+La versione per iOS non è ancora disponibile per il download.
+
 ## Features
 * Lista degli articoli di cui si sta tracciando la variazione di prezzo.
 * Sistema di notifiche push per l'avviso di abbassamento di prezzo e raggiungimento del prezzo target.
