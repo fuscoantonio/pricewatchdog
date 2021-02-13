@@ -1,5 +1,5 @@
 # PriceWatchdog
-PriceWatchdog è una app gratuita ed open source per il tracciamento delle variazioni di prezzo di articoli su diversi siti di e-commerce. Compatibile con Android 6.0 e oltre e iOS 10.0 e oltre.
+PriceWatchdog è una app gratuita ed open source per il tracciamento delle variazioni di prezzo di articoli su diversi siti di e-commerce. Compatibile con Android 6.0+ e iOS 10.0+.
 
 ![screenshot](./readme-imgs/screenshots.png)
 
