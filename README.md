@@ -27,7 +27,7 @@ Siti attualmente supportati da PriceWatchdog:
 
 **NOTA**: le suddette limitazioni di 15 minuti e 30 secondi sono imposte dal sistema operativo.
 
-* Per l'ordine di rilevamento dei prezzi, la app segue il metodo First In First Out, quindi gli articoli inseriti prima saranno quelli che verranno controllati prima. Quando sono stati controllati tutti, la app riparte dal primo inserito.
+* Per l'ordine di rilevamento dei prezzi, la app segue dei cicli in cui, con metodo Last In First Out, controlla tutti gli articoli dall'ultimo inserito al primo. Quando sono stati controllati tutti, la app riparte dall'ultimo inserito. Un ciclo può non essere completato in un singolo processo in background (cioè ogni 15 minuti) ma essere distribuito su più processi in intervalli di 15 minuti.
 * PriceWatchdog non fa uso di API dei siti da cui recupera le informazioni.
 
 ## Disclaimer
