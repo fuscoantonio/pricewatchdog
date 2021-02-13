@@ -6,7 +6,7 @@ PriceWatchdog è una app gratuita ed open source per il tracciamento delle varia
 ## Download
 Questa è la prima versione alpha della app. Potrebbe non essere stabile.
 
-[Alpha release](https://github.com/fuscoantonio/pricewatchdog/releases/tag/v0.1-alpha)
+[Download alpha release](https://github.com/fuscoantonio/pricewatchdog/releases/tag/v0.1-alpha)
 
 La versione per iOS non è ancora disponibile per il download.
 
