@@ -13,7 +13,7 @@ La versione per iOS non è ancora disponibile per il download.
 ## Features
 * Lista degli articoli di cui si sta tracciando la variazione di prezzo.
 * Sistema di notifiche push per l'avviso di abbassamento di prezzo e raggiungimento del prezzo target.
-* Schermata con le ultime 50 notifiche push ricevute.
+* Schermata con le ultime 50 notifiche ricevute.
 
 ## Siti supportati
 Siti attualmente supportati da PriceWatchdog:
