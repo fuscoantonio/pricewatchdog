@@ -22,7 +22,8 @@ Siti attualmente supportati da PriceWatchdog:
 ## Note sul funzionamento
 * Per il rilevamento del prezzo, la app esegue delle richieste HTTP in background agli URL forniti. Queste richieste vengono effettuate circa **ogni 15 minuti** e il processo in background dura circa **30 secondi**. A seconda del sito, la app è in grado di rilevare il prezzo di una parte o di tutti gli articoli in lista entro 30 secondi. Dai test, Amazon risulta il sito che richiede più tempo per il recupero del prezzo, permettendo di recuperare intorno agli 8-10 prezzi per richiesta (cioè ogni 15 minuti). Questo considerando una lista di soli articoli Amazon. Se si alternano articoli di Amazon al recupero del prezzo per articoli da altri siti, è possibile rilevare molti più prezzi in 30 secondi.
 
-sas
+**NOTA**: le suddette limitazioni di 15 minuti e 30 secondi sono imposte dal sistema operativo.
+
 * Per l'ordine di rilevamento dei prezzi, la app segue il metodo First In First Out, quindi gli articoli inseriti prima saranno quelli che verranno controllati prima. Quando sono stati controllati tutti, la app riparte dal primo inserito.
 * PriceWatchdog non fa uso di API dei siti da cui recupera le informazioni.
 
