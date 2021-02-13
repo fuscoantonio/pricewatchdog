@@ -24,6 +24,7 @@ Siti attualmente supportati da PriceWatchdog:
 
 **NOTA**: le suddette limitazioni di 15 minuti e 30 secondi sono imposte dal sistema operativo.
 
+* Al riavvio del dispositivo, è necessario avviare almeno una volta la app per consentirle di eseguire operazioni in background (rilevamento prezzo). Non è necessario tenere la app aperta successivamente.
 * Per l'ordine di rilevamento dei prezzi, la app segue il metodo First In First Out, quindi gli articoli inseriti prima saranno quelli che verranno controllati prima. Quando sono stati controllati tutti, la app riparte dal primo inserito.
 * PriceWatchdog non fa uso di API dei siti da cui recupera le informazioni.
 
