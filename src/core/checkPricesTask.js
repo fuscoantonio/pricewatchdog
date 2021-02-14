@@ -8,6 +8,8 @@ var notifications = [];
 const MAX_PROCESS_TIME = 29500; //29.5 seconds in milliseconds
 
 export default checkPricesTask = async () => {
+    let startTime = await new Date().getTime();
+    
     let products = await AsyncStorage.getItem(productsData)
                     .then(data => JSON.parse(data))
                     .catch(() => {});
@@ -26,7 +28,6 @@ export default checkPricesTask = async () => {
     if (!products)
         return;
     
-    let startTime = await new Date().getTime();
     do {
         let startIndex = await getStartIndex(products);
         
@@ -44,7 +45,7 @@ export default checkPricesTask = async () => {
             await AsyncStorage.setItem(productsData, JSON.stringify(products))
             .catch(() => {});
         }
-    } while (timeDifference < MAX_PROCESS_TIME);
+    } while (timeDifference < MAX_PROCESS_TIME); //continues looping as long as it's within 29.5 seconds
 }
 
 
@@ -101,6 +102,7 @@ const setPrices = (product, newPrices) => {
             addNotification(product, 'drop', message);
         }
     }
+    product.currentPrice = newPrices[0];
 }
 
 
