@@ -1,3 +1,4 @@
+import NetInfo from '@react-native-community/netinfo';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import fetchProductData from './fetchProductData';
 import * as Notifications from 'expo-notifications';
@@ -8,6 +9,10 @@ var notifications = [];
 const MAX_PROCESS_TIME = 29500; //29.5 seconds in milliseconds
 
 export default checkPricesTask = async () => {
+    let isDeviceConnected = await NetInfo.fetch().then(state => state.isConnected);
+    if (!isDeviceConnected)
+        return;
+
     let startTime = await new Date().getTime();
     
     let products = await AsyncStorage.getItem(productsData)
